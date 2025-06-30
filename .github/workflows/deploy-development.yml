@@ -1,4 +1,4 @@
-name: Development CI/CD
+name: Deploy Development
 
 on:
   push:
@@ -26,4 +26,3 @@ jobs:
       - name: Run CSS Linter
         run: npx stylelint "styles/**/*.css"
 
-      # No Build Step (HTML/CSS project doesn't need it)
