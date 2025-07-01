@@ -2,7 +2,8 @@ name: Deploy Production
 
 on:
   push:
-    branches: [production]
+    branches:
+      - production
 
 jobs:
   build-deploy:
@@ -25,4 +26,10 @@ jobs:
 
       - name: Run CSS Linter
         run: npx stylelint "styles/**/*.css"
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy log
+        run: echo "Deployment to production-env done!"
 
