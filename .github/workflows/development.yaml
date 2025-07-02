@@ -1,4 +1,4 @@
-name: Development WorkflowAdd commentMore actions
+name: Development Workflow
 
 on:
   push:
@@ -25,10 +25,7 @@ jobs:
 
       - name: Run HTMLHint
         run: npx htmlhint .
-      - name: Fix permissions just in case
-        run: chmod +x ./node_modules/.bin/.stylelint
-
-
+     
       - name: Run Stylelint
         run: npm run lint:css
 
