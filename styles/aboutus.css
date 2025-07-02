@@ -1,0 +1,164 @@
+/* Reuse styles from index.css */
+@import url('index.css');
+
+.page-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 3rem;
+}
+
+.about-section, .mission-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.about-content, .mission-content {
+    flex: 1;
+}
+
+.about-image, .mission-image {
+    flex: 1;
+}
+
+.about-image img, .mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.about-section h2, .mission-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p, .mission-section p {
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+    line-height: 1.7;
+}
+
+.team-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team-section h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.team-subtitle {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.team-member h3 {
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+}
+
+.position {
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.values-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.values-section h2 {
+    color: #2c3e50;
+    margin-bottom: 3rem;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.value {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-icon svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.value h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.value p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .about-section, .mission-section {
+        flex-direction: column;
+    }
+    
+    .mission-section {
+        flex-direction: column-reverse;
+    }
+    
+    .team-members, .values {
+        grid-template-columns: 1fr;
+    }
+}
